@@ -27,8 +27,7 @@ public abstract class Character {
 
     public abstract void kick(Character c);
     public boolean isAlive(){
-        if (getHp() < 0)
-            setHp(0);
+
         return getHp() > 0;
     }
 
@@ -38,14 +37,10 @@ public abstract class Character {
         this.name = name;
     }
 
-    Character(int power_min, int power_max, int hp, String name){
-        power = new Random().nextInt(power_max - power_min) + power_min;
-        this.hp = hp;
-        this.name = name;
-    }
+
 
     @Override
     public String toString() {
-        return name + " power: " + power + ", hp: " + hp ;
+        return getName() + " power: " + power + ", hp: " + hp ;
     }
 }

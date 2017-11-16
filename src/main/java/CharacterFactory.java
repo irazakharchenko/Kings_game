@@ -14,10 +14,9 @@ public class CharacterFactory {
                      break;
             case 2:  characterCurrent = new King();
                      break;
-            case 3:  characterCurrent = new Knight();
+            default:  characterCurrent = new Knight();
                      break;
-            default: characterCurrent = new Hobbit();
-                     break;
+
 
         }
         //System.out.println(characterCurrent);

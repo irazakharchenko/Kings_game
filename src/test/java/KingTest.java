@@ -9,7 +9,7 @@ public class KingTest {
     Knight kn = new Knight(), kn1 = new Knight();
     Hobbit h = new Hobbit(), h1 = new Hobbit();
     Elf e = new Elf(), e1 = new Elf();
-    Main m;
+    Main m = new Main();
     String[] arguments = new String[] {"123"};
     GameManager gm = new GameManager();
     CharacterFactory cf = new CharacterFactory();
@@ -48,6 +48,7 @@ public class KingTest {
         assertEquals(false, k.isAlive());
         kn.setHp(11);
         kn.setPower(11);
+        assertEquals("Knight power: 11, hp: 11", kn.toString());
         e.kick(kn);
         assertEquals(true, kn.isAlive() && kn.getPower() == 10);
         Main.main(arguments);
