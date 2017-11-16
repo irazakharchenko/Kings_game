@@ -1,5 +1,3 @@
-import java.util.Random;
-
 import static java.lang.Math.max;
 
 public class Sword implements KickBehaviour {
