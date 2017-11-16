@@ -1,22 +1,17 @@
 import java.util.Random;
 
-public  class King extends Character{
+public  class King extends SwordsMan{
 
-    protected int MAX_POWER = 15;
-    protected int MIN_POWER = 5;
+
     private KickBehaviour kickBehaviour = new Sword();
 
-    private String name = "King";
 
-    public String getName() {
-        return name;
-    }
+
 
     public King(){
 
 
-        super(5,15, new Random().nextInt(15 - 5) + 5,
-                "King");
+        super(5,15, 5, 15,"King");
     }
 
     @Override
@@ -26,12 +21,5 @@ public  class King extends Character{
         }
         kickBehaviour.kick(this, c);
     }
-
-    @Override
-    public String toString(){
-        return name + " power: " + MIN_POWER + " - " + MAX_POWER + ", hp: " + hp ;
-    }
-
-
 
 }

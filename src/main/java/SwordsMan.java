@@ -18,7 +18,7 @@ public class SwordsMan extends Character {
     @Override
     public void kick(Character c){
         Random rand = new Random();
-        c.hp -= rand.nextInt(MAX_POWER - MIN_POWER) + MIN_POWER;
+        c.setHp(c.getHp() - (rand.nextInt(MAX_POWER - MIN_POWER) + MIN_POWER));
         if(c.hp < 0){
             c.hp = 0;
         }
