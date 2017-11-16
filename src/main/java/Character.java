@@ -21,6 +21,10 @@ public abstract class Character {
         this.hp = hp;
     }
 
+    public void setPower(int power){
+        this.power = power;
+    }
+
     public abstract void kick(Character c);
     public boolean isAlive(){
         if (getHp() < 0)
