@@ -5,7 +5,7 @@ import static java.lang.Math.max;
 public class SwordsMan extends Character {
 
 
-    Random rand = new Random();
+
 
 
     private int MAX_POWER;

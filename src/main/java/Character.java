@@ -1,4 +1,3 @@
-import java.util.Random;
 
 public abstract class Character {
     protected int power;

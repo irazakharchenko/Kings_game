@@ -1,6 +1,6 @@
 class Knight extends SwordsMan {
 
-    private String name = "Knight";
+    //private String name = "Knight";
 
     public Knight(){
 

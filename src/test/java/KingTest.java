@@ -14,10 +14,7 @@ public class KingTest {
     GameManager gm = new GameManager();
     CharacterFactory cf = new CharacterFactory();
     Character win ;
-    @Before
-    public void initializationOfObject(){
 
-    }
     @Test
     public void kick() throws Exception {
         k.setHp(11);
